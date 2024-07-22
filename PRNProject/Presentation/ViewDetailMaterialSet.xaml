@@ -1,0 +1,42 @@
+﻿<Page x:Class="PRNProject.Presentation.ViewDetailMaterialSet"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PRNProject.Presentation"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="White"
+      Title="ViewDetailMaterialSet">
+
+    <Grid>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click" Margin="10"/>
+
+        <TextBlock Text="Material Set Details" FontSize="20" Margin="10,20,10,10" HorizontalAlignment="Center"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Material Set ID:"/>
+            <TextBlock x:Name="MaterialSetIDTextBlock" Width="200" Height="30" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Created Date:"/>
+            <TextBlock x:Name="CreatedDateTextBlock" Width="200" Height="30" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Total Price:"/>
+            <TextBlock x:Name="TotalPriceTextBlock" Width="200" Height="30" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Material Details" FontSize="20" Margin="0,20,0,10"/>
+            <TextBlock Text="Material Name:"/>
+            <TextBlock x:Name="MaterialNameTextBlock" Width="200" Height="30" HorizontalAlignment="Center"/>
+            <TextBlock Text="Material Price:"/>
+            <TextBlock x:Name="MaterialPriceTextBlock" Width="200" Height="30" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Gemstone Details" FontSize="20" Margin="0,20,0,10"/>
+            <TextBlock Text="Gemstone Name:"/>
+            <TextBlock x:Name="GemstoneNameTextBlock" Width="200" Height="30" HorizontalAlignment="Center"/>
+            <TextBlock Text="Gemstone Price:"/>
+            <TextBlock x:Name="GemstonePriceTextBlock" Width="200" Height="30" HorizontalAlignment="Center"/>
+            <TextBlock Text="Gemstone Weight:"/>
+            <TextBlock x:Name="GemstoneWeightTextBlock" Width="200" Height="30" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>
