@@ -6,34 +6,32 @@
       xmlns:local="clr-namespace:PRNProject.Presentation"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Background="White"
       Title="ViewDetailJewelryDesign">
 
     <Grid>
-        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click" Margin="10"/>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="Jewelry Design ID:"/>
-            <TextBlock x:Name="JewelryDesignIDTextBlock" Width="200" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0"/>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click" Margin="10" FontSize="17"/>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,80,0">
+            <TextBlock Text="Jewelry Design ID:" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBlock x:Name="JewelryDesignIDTextBlock" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
-            <TextBlock Text="Jewelry Design Name:"/>
-            <TextBlock x:Name="JewelryDesignNameTextBlock" Width="200" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0"/>
+            <TextBlock Text="Jewelry Design Name:" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBlock x:Name="JewelryDesignNameTextBlock" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
-            <TextBlock Text="Jewelry Design Image:"/>
-            <Image x:Name="JewelryDesignImage" Width="200" Height="200"/>
+            <TextBlock Text="Status:" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBlock x:Name="JewelryDesignStatusTextBlock" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
+            <TextBlock Text="Created Date:" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBlock x:Name="CreatedDateTextBlock" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
-            <TextBlock Text="Status:"/>
-            <TextBlock x:Name="JewelryDesignStatusTextBlock" Width="200" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0"/>
+            <TextBlock Text="Jewelry ID:" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBlock x:Name="JewelryIDTextBlock" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
+        </StackPanel>
 
-            <TextBlock Text="Created Date:"/>
-            <TextBlock x:Name="CreatedDateTextBlock" Width="200" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0"/>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="85,0,0,0">
+            <TextBlock Text="Jewelry Design Image:" HorizontalAlignment="Center" FontSize="20"/>
+            <Image x:Name="JewelryDesignImage" Width="300" Height="350" HorizontalAlignment="Right"/>
 
-
-
-            <TextBlock Text="Jewelry ID:"/>
-            <TextBlock x:Name="JewelryIDTextBlock" Width="200" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0"/>
-
-            <Button x:Name="ApproveButton" Content="Approve" Click="ApproveButton_Click" Tag="{Binding JewelryID}" Visibility="Collapsed" />
+            <Button x:Name="ApproveButton" Content="Approve" Click="ApproveButton_Click" Tag="{Binding JewelryID}" Visibility="Collapsed" HorizontalAlignment="Right"/>
         </StackPanel>
     </Grid>
 </Page>

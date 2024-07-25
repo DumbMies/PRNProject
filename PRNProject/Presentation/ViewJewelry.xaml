@@ -6,19 +6,18 @@
       xmlns:local="clr-namespace:PRNProject.Presentation"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Background="White"
       Title="ViewJewelry">
 
     <Grid>
-        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click" Margin="10"/>
-        <DataGrid x:Name="JewelryDataGrid" AutoGenerateColumns="False" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click" Margin="10" FontSize="30"/>
+        <DataGrid x:Name="JewelryDataGrid" AutoGenerateColumns="False" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0" Width="1200" FontSize="15">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding JewelryID}" Width="50"/>
                 <DataGridTextColumn Header="Name" Binding="{Binding JewelryName}" Width="100"/>
                 <DataGridTextColumn Header="Description" Binding="{Binding JewelryDescription}" Width="150"/>
                 <DataGridTextColumn Header="Status" Binding="{Binding JewelryStatus}" Width="100"/>
                 <DataGridTextColumn Header="Created Date" Binding="{Binding CreatedDate}" Width="100"/>
-                <DataGridTextColumn Header="Production Request ID" Binding="{Binding ProductionRequestID}" Width="150"/>
+                <DataGridTextColumn Header="Production Request ID" Binding="{Binding ProductionRequestID}" Width="160"/>
                 <DataGridTemplateColumn Header="Material Set">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

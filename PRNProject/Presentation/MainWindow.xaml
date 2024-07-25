@@ -8,14 +8,14 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid HorizontalAlignment="Center">
-            <TextBlock Text="Login" FontSize="40" FontWeight="Bold" Margin="0,0,0,10"/>
+            <TextBlock Text="Jewelry Production Order System" FontSize="42" FontWeight="Bold" Margin="0,20,0,0"/>
         </Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="Email:"/>
-            <TextBox x:Name="EmailTextBox" Text="customer@gmail.com" Width="200" Margin="0,0,0,10"/>
-            <TextBlock Text="Password:"/>
-            <PasswordBox x:Name="PasswordBox" Password="123456" Width="200" Margin="0,0,0,10"/>
-            <Button Content="Login" Width="100" Click="LoginButton_Click"/>
+            <TextBlock Text="Email:" FontSize="30"/>
+            <TextBox x:Name="EmailTextBox" Text="customer@gmail.com" Width="400" Height="40" FontSize="25" Margin="0,0,0,10"/>
+            <TextBlock Text="Password:" FontSize="30"/>
+            <PasswordBox x:Name="PasswordBox" Password="123456" Width="400" Height="40" FontSize="25" Margin="0,0,0,10"/>
+            <Button Content="Login" Width="100" FontSize="20" Click="LoginButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>

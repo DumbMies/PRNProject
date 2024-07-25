@@ -6,12 +6,12 @@
       xmlns:local="clr-namespace:PRNProject.Presentation"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Background="White"
-      Title="ViewProductionRequest">
+      Title="ViewProductionRequest"
+      >
 
     <Grid>
-        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click" Margin="10"/>
-        <DataGrid x:Name="ProductionRequestDataGrid" AutoGenerateColumns="False" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Center" MouseDoubleClick="ProductionRequestDataGrid_MouseDoubleClick">
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click" Margin="10" FontSize="30"/>
+        <DataGrid x:Name="ProductionRequestDataGrid" AutoGenerateColumns="False" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Top" MouseDoubleClick="ProductionRequestDataGrid_MouseDoubleClick" Margin="0,100,0,0" FontSize="15" Width="1200">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding ProductionRequestID}" Width="50"/>
                 <DataGridTextColumn Header="Name" Binding="{Binding ProductionRequestName}" Width="150"/>

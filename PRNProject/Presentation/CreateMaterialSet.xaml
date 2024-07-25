@@ -6,21 +6,20 @@
       xmlns:local="clr-namespace:PRNProject.Presentation"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Background="White"
       Title="CreateMaterialSet">
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="Gemstone:"/>
-            <ComboBox x:Name="GemstoneComboBox" Width="200" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,10"/>
+            <TextBlock Text="Gemstone:" FontSize="40"/>
+            <ComboBox x:Name="GemstoneComboBox" Width="350" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,10"/>
 
-            <TextBlock Text="Material:"/>
-            <ComboBox x:Name="MaterialComboBox" Width="200" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,10"/>
+            <TextBlock Text="Material:" FontSize="40"/>
+            <ComboBox x:Name="MaterialComboBox" Width="350" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,10"/>
 
-            <TextBlock Text="Weight (gam):"/>
-            <TextBox x:Name="WeightTextBox" Width="200" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,10"/>
+            <TextBlock Text="Weight (gam):" FontSize="40"/>
+            <TextBox x:Name="WeightTextBox" Width="350" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,10"/>
 
-            <Button Content="Submit" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Click="SubmitButton_Click"/>
+            <Button Content="Submit" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Click="SubmitButton_Click" FontSize="20"/>
         </StackPanel>
         
     </Grid>

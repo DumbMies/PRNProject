@@ -6,16 +6,15 @@
       xmlns:local="clr-namespace:PRNProject.Presentation"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Background="White"
       Title="CreateProductionRequest">
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="Production Request Name:"/>
-            <TextBox x:Name="ProductionRequestNameTextBox" Width="200" Margin="0,0,0,10"/>
-            <TextBlock Text="Production Request Quantity:"/>
-            <TextBox x:Name="ProductionRequestQuantityTextBox" Width="200" Margin="0,0,0,10"/>
-            <Button Content="Submit" Width="100" Click="SubmitButton_Click"/>
+            <TextBlock Text="Production Request Name:" FontSize="40"/>
+            <TextBox x:Name="ProductionRequestNameTextBox" Width="520" Height="30" Margin="0,0,0,10"/>
+            <TextBlock Text="Production Request Quantity:" FontSize="40"/>
+            <TextBox x:Name="ProductionRequestQuantityTextBox" Width="520" Height="30" Margin="0,0,0,10"/>
+            <Button Content="Submit" Width="100" Click="SubmitButton_Click" FontSize="20"/>
         </StackPanel>
     </Grid>
 </Page>

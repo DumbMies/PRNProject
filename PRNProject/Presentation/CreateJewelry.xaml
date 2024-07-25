@@ -6,19 +6,18 @@
       xmlns:local="clr-namespace:PRNProject.Presentation"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Background="White"
       Title="CreateJewelry">
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="Jewelry Name:"/>
-            <TextBox x:Name="JewelryNameTextBox" Width="200" Margin="0,0,0,10"/>
+            <TextBlock Text="Jewelry Name:" FontSize="40"/>
+            <TextBox x:Name="JewelryNameTextBox" Width="500" Height="35" Margin="0,0,0,10"/>
 
-            <TextBlock Text="Jewelry Description:"/>
-            <TextBox x:Name="JewelryDescriptionTextBox" Width="200" Margin="0,0,0,10"/>
+            <TextBlock Text="Jewelry Description:" FontSize="40"/>
+            <TextBox x:Name="JewelryDescriptionTextBox" Width="500" Height="35" Margin="0,0,0,10"/>
 
 
-            <Button Content="Submit" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Click="SubmitButton_Click"/>
+            <Button Content="Submit" FontSize="25"  VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Click="SubmitButton_Click"/>
         </StackPanel>
         
     </Grid>

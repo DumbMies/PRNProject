@@ -40,7 +40,6 @@ namespace PRNProject.Presentation
                 }
             }
             LoadData();
-            LoadData();
         }
 
         private void LoadData()
