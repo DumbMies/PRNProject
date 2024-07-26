@@ -17,8 +17,8 @@
                 <DataGridTextColumn Header="ID" Binding="{Binding JewelryID}" Width="50"/>
                 <DataGridTextColumn Header="Name" Binding="{Binding JewelryName}" Width="150"/>
                 <DataGridTextColumn Header="Description" Binding="{Binding JewelryDescription}" Width="150"/>
-                <DataGridTextColumn Header="Status" Binding="{Binding JewelryStatus}" Width="150"/>
-                <DataGridTextColumn Header="Created Date" Binding="{Binding CreatedDate}" Width="150"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding JewelryStatus}" Width="130"/>
+                <DataGridTextColumn Header="Created Date" Binding="{Binding CreatedDate}" Width="170"/>
                 <DataGridTextColumn Header="Production Request ID" Binding="{Binding ProductionRequestID}" Width="160"/>
                 <DataGridTemplateColumn Header="Material Set">
                     <DataGridTemplateColumn.CellTemplate>

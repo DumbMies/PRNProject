@@ -14,7 +14,6 @@ namespace PRNProject.Data
         public DbSet<Material> Material { get; set; }
         public DbSet<Gemstone> Gemstone { get; set; }
         public DbSet<MaterialSet> MaterialSet { get; set; }
-        public DbSet<WarrantyCard> WarrantyCard { get; set; }
         public DbSet<Delivery> Delivery { get; set; }
         public DbSet<JewelryDesign> JewelryDesign { get; set; }
 
@@ -115,23 +114,6 @@ namespace PRNProject.Data
                 entity.HasKey(e => e.MaterialSetID);
                 entity.Property(e => e.CreatedDate).IsRequired();
                 entity.Property(e => e.TotalPrice).HasColumnType("decimal(18,0)");
-            });
-
-            modelBuilder.Entity<WarrantyCard>(entity =>
-            {
-                entity.HasKey(e => e.WarrantyCardID);
-                entity.Property(e => e.CreatedDate).IsRequired();
-                entity.Property(e => e.ExpiredDate).IsRequired();
-
-                entity.HasOne(e => e.Jewelry)
-                      .WithMany()
-                      .HasForeignKey(e => e.JewelryID)
-                      .OnDelete(DeleteBehavior.Cascade);
-
-                entity.HasOne(e => e.User)
-                      .WithMany()
-                      .HasForeignKey(e => e.UserID)
-                      .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<JewelryDesign>(entity =>

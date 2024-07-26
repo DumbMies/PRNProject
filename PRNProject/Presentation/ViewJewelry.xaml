@@ -13,10 +13,10 @@
         <DataGrid x:Name="JewelryDataGrid" AutoGenerateColumns="False" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0" Width="1200" FontSize="15">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding JewelryID}" Width="50"/>
-                <DataGridTextColumn Header="Name" Binding="{Binding JewelryName}" Width="100"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding JewelryName}" Width="150"/>
                 <DataGridTextColumn Header="Description" Binding="{Binding JewelryDescription}" Width="150"/>
-                <DataGridTextColumn Header="Status" Binding="{Binding JewelryStatus}" Width="100"/>
-                <DataGridTextColumn Header="Created Date" Binding="{Binding CreatedDate}" Width="100"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding JewelryStatus}" Width="130"/>
+                <DataGridTextColumn Header="Created Date" Binding="{Binding CreatedDate}" Width="170"/>
                 <DataGridTextColumn Header="Production Request ID" Binding="{Binding ProductionRequestID}" Width="160"/>
                 <DataGridTemplateColumn Header="Material Set">
                     <DataGridTemplateColumn.CellTemplate>

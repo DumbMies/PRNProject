@@ -12,27 +12,27 @@
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click" Margin="10" FontSize="30"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Quotation Request ID:" FontSize="30"/>
-            <TextBlock x:Name="QuotationRequestIDTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="30"/>
+            <TextBlock x:Name="QuotationRequestIDTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
             <TextBlock Text="Quotation Request Name:" FontSize="30"/>
-            <TextBlock x:Name="QuotationRequestNameTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="30"/>
+            <TextBlock x:Name="QuotationRequestNameTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
             <TextBlock Text="Status:" FontSize="30"/>
-            <TextBlock x:Name="QuotationRequestStatusTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="30"/>
+            <TextBlock x:Name="QuotationRequestStatusTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
             <TextBlock Text="Labor Price:" Margin="0,10,0,0" FontSize="30"/>
-            <TextBlock x:Name="LaborPriceTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="30"/>
+            <TextBlock x:Name="LaborPriceTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
             <TextBlock Text="Total Price:" FontSize="30"/>
-            <TextBlock x:Name="TotalPriceTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="30"/>
+            <TextBlock x:Name="TotalPriceTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
             <TextBlock Text="Created Date:" FontSize="30"/>
-            <TextBlock x:Name="CreatedDateTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="30"/>
+            <TextBlock x:Name="CreatedDateTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
             
             
             <TextBlock Text="Jewelry ID:" FontSize="30"/>
-            <TextBlock x:Name="JewelryIDTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="30"/>
+            <TextBlock x:Name="JewelryIDTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
             <Button x:Name="ApproveButton" Content="Approve" Click="ApproveButton_Click" Visibility="Collapsed" FontSize="30"/>
         </StackPanel>

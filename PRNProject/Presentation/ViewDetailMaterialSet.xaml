@@ -14,29 +14,29 @@
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0">
             <TextBlock Text="Material Set Details" FontSize="40" Margin="0,0,0,10"/>
             <TextBlock Text="Material Set ID:" FontSize="30"/>
-            <TextBlock x:Name="MaterialSetIDTextBlock" Width="400" Height="40"/>
+            <TextBlock x:Name="MaterialSetIDTextBlock" FontSize="20" Width="400" Height="40"/>
             <TextBlock Text="Created Date:" FontSize="30"/>
-            <TextBlock x:Name="CreatedDateTextBlock" Width="400" Height="40"/>
+            <TextBlock x:Name="CreatedDateTextBlock" FontSize="20" Width="400" Height="40"/>
             <TextBlock Text="Total Price:" FontSize="30"/>
-            <TextBlock x:Name="TotalPriceTextBlock" Width="400" Height="40"/>
+            <TextBlock x:Name="TotalPriceTextBlock" FontSize="20" Width="400" Height="40"/>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Material Details" FontSize="40" Margin="0,-70,0,0"/>
             <TextBlock Text="Material Name:" FontSize="30"/>
-            <TextBlock x:Name="MaterialNameTextBlock" Width="400" Height="40"/>
+            <TextBlock x:Name="MaterialNameTextBlock" FontSize="20" Width="400" Height="40"/>
             <TextBlock Text="Material Price:" FontSize="30"/>
-            <TextBlock x:Name="MaterialPriceTextBlock" Width="400" Height="40"/>
+            <TextBlock x:Name="MaterialPriceTextBlock" FontSize="20" Width="400" Height="40"/>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,60,0">
             <TextBlock Text="Gemstone Details" FontSize="40" Margin="0,-10,0,10"/>
             <TextBlock Text="Gemstone Name:" FontSize="30"/>
-            <TextBlock x:Name="GemstoneNameTextBlock" Width="400" Height="40"/>
+            <TextBlock x:Name="GemstoneNameTextBlock" FontSize="20" Width="400" Height="40"/>
             <TextBlock Text="Gemstone Price:" FontSize="30"/>
-            <TextBlock x:Name="GemstonePriceTextBlock" Width="400" Height="40"/>
+            <TextBlock x:Name="GemstonePriceTextBlock" FontSize="20" Width="400" Height="40"/>
             <TextBlock Text="Gemstone Weight:" FontSize="30"/>
-            <TextBlock x:Name="GemstoneWeightTextBlock" Width="400" Height="40"/>
+            <TextBlock x:Name="GemstoneWeightTextBlock" FontSize="20" Width="400" Height="40"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -13,12 +13,12 @@
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click" Margin="10" FontSize="30"/>
         <DataGrid x:Name="ProductionRequestDataGrid" AutoGenerateColumns="False" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Top" MouseDoubleClick="ProductionRequestDataGrid_MouseDoubleClick" Margin="0,100,0,0" FontSize="15" Width="1200">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding ProductionRequestID}" Width="50"/>
-                <DataGridTextColumn Header="Name" Binding="{Binding ProductionRequestName}" Width="150"/>
-                <DataGridTextColumn Header="Status" Binding="{Binding ProductionRequestStatus}" Width="150"/>
-                <DataGridTextColumn Header="Address" Binding="{Binding ProductionRequestAddress}" Width="150"/>
-                <DataGridTextColumn Header="Quantity" Binding="{Binding ProductionRequestQuantity}" Width="80"/>
-                <DataGridTextColumn Header="Created Date" Binding="{Binding CreatedDate}" Width="150"/>
+                <DataGridTextColumn Header="ID" Binding="{Binding ProductionRequestID}" Width="100"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding ProductionRequestName}" Width="200"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding ProductionRequestStatus}" Width="160"/>
+                <DataGridTextColumn Header="Address" Binding="{Binding ProductionRequestAddress}" Width="250"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding ProductionRequestQuantity}" Width="150"/>
+                <DataGridTextColumn Header="Created Date" Binding="{Binding CreatedDate}" Width="220"/>
                 <DataGridTextColumn Header="User" Binding="{Binding UserID}" Width="50"/>
                 <DataGridTemplateColumn Header="Deliver">
                     <DataGridTemplateColumn.CellTemplate>
