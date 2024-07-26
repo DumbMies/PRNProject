@@ -59,6 +59,10 @@ namespace PRNProject.Presentation
             {
                 ApproveButton.Visibility = Visibility.Visible;
             }
+            if (_user.UserRole == "design")
+            {
+                DeleteButton.Visibility = Visibility.Visible;
+            }
 
         }
 
@@ -68,6 +72,26 @@ namespace PRNProject.Presentation
             _jewelryDesignRepository.Update(_jewelryDesign);
             _context.SaveChanges();
             NavigationService.Navigate(new ViewJewelry(_user));
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to delete this Jewelry Design?", "Delete Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                var jewelry = _context.Jewelry.Find(_jewelryDesign.JewelryID);
+                if (jewelry.JewelryStatus == "Manufactured")
+                {
+                    MessageBox.Show("Cannot delete Jewelry Design as the Jewelry has been manufactured.");
+                    return;
+                }
+
+                _jewelryDesignRepository.Delete(_jewelryDesign.JewelryDesignID);
+                _context.SaveChanges();
+                NavigationService.Navigate(new ViewJewelry(_user));
+            }    
+                
         }
 
         private void BackButton_Click(object sender, System.Windows.RoutedEventArgs e)

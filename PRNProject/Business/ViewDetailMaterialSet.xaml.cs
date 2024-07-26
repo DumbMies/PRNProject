@@ -60,7 +60,34 @@ namespace PRNProject.Presentation
                 GemstonePriceTextBlock.Text = gemstone.GemstonePrice.ToString("N0"); 
                 GemstoneWeightTextBlock.Text = gemstone.GemstoneWeight.ToString() + " carat";
             }
+
+            if (_user.UserRole == "sales")
+            {
+                DeleteButton.Visibility = Visibility.Visible;
+            }
         }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to delete this Material Set?", "Delete Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                var quotationRequestExists = _context.QuotationRequest
+                    .Any(qr => qr.JewelryID == _materialSet.JewelryID);
+
+                if (quotationRequestExists)
+                {
+                    MessageBox.Show("Cannot delete Material Set because the Quotation Request has been created.");
+                    return;
+                }
+
+                _materialSetRepository.Delete(_materialSet.MaterialSetID);
+                _context.SaveChanges();
+                NavigationService.Navigate(new ViewJewelry(_user));
+            }
+        }
+
 
         private void BackButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {

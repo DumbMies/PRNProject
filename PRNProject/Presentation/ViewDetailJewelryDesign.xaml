@@ -31,7 +31,8 @@
             <TextBlock Text="Jewelry Design Image:" HorizontalAlignment="Center" FontSize="20"/>
             <Image x:Name="JewelryDesignImage" Width="600" Height="650" HorizontalAlignment="Right"/>
 
-            <Button x:Name="ApproveButton" Content="Approve" Click="ApproveButton_Click" Tag="{Binding JewelryID}" Visibility="Collapsed" HorizontalAlignment="Right"/>
+            <Button x:Name="ApproveButton" Content="Approve" Click="ApproveButton_Click" Tag="{Binding JewelryID}" Visibility="Collapsed" HorizontalAlignment="Right" FontSize="17"/>
+            <Button x:Name="DeleteButton" Content="Delete" Click="DeleteButton_Click" Visibility="Collapsed" HorizontalAlignment="Right" Margin="10" FontSize="17"/>
         </StackPanel>
     </Grid>
 </Page>

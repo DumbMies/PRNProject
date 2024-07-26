@@ -55,6 +55,10 @@ namespace PRNProject.Presentation
             {
                 ApproveButton.Visibility = Visibility.Visible;
             }
+            if (_user.UserRole == "sales")
+            {
+                DeleteButton.Visibility = Visibility.Visible;
+            }
         }
 
         private void ApproveButton_Click(object sender, RoutedEventArgs e)
@@ -73,6 +77,25 @@ namespace PRNProject.Presentation
             }
             NavigationService.Navigate(new ViewJewelry(_user));
 
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to delete this Quotation Request?", "Delete Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                if (_quotationRequest.QuotationRequestStatus != "Unapprove")
+                {
+                    MessageBox.Show("Cannot delete Quotation Request as it is already Approved.");
+                    return;
+                }
+
+                _quotationRequestRepository.Delete(_quotationRequest.QuotationRequestID);
+                _context.SaveChanges();
+                NavigationService.Navigate(new ViewJewelry(_user));
+            }
+                
         }
         private void BackButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {

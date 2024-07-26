@@ -55,10 +55,6 @@ namespace PRNProject.Presentation
                 ViewProductionRequestButton.Visibility = Visibility.Visible;
                 ViewJewelryButton.Visibility = Visibility.Visible;
             }
-            if (user.UserRole == "admin")
-            {
-                
-            }
             _user = user;
         }
         private void CreateProductionRequestButton_Click(object sender, RoutedEventArgs e)

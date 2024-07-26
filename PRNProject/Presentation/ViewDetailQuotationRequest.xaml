@@ -35,6 +35,7 @@
             <TextBlock x:Name="JewelryIDTextBlock" Width="600" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
             <Button x:Name="ApproveButton" Content="Approve" Click="ApproveButton_Click" Visibility="Collapsed" FontSize="30"/>
+            <Button x:Name="DeleteButton" Content="Delete" Click="DeleteButton_Click" Visibility="Collapsed" FontSize="30" Margin="10"/>
         </StackPanel>
     </Grid>
 </Page>

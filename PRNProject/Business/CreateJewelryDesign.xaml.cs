@@ -54,6 +54,8 @@ namespace PRNProject.Presentation
                 Directory.CreateDirectory(System.IO.Path.GetDirectoryName(destinationPath));
                 File.Copy(fileName, destinationPath, true);
                 _uploadedImagePath = destinationPath;
+                UploadStatusTextBlock.Text = "Uploaded Successfully";
+                UploadStatusTextBlock.Visibility = Visibility.Visible;
             }
         }
 
